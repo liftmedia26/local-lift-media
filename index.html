@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Local Lift Media helps small businesses stand out with modern websites, logo design, and branding.">
+  <title>Local Lift Media | Build Your Business. Elevate Your Brand.</title>
+  <style>
+    :root{--black:#111;--white:#fff;--gray:#858585;--light:#f3f3f3;--line:#dedede}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:5}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:900;letter-spacing:1.5px;font-size:18px;line-height:1.05}
+    .brand span{display:block;color:var(--gray);font-size:10px;letter-spacing:5px;margin-top:6px}
+    .links{display:flex;gap:25px;font-size:13px;font-weight:700}
+    .btn{display:inline-block;background:var(--black);color:var(--white);padding:13px 20px;border-radius:3px;font-size:13px;font-weight:700;letter-spacing:.3px}
+    .btn.light{background:var(--white);color:var(--black)}
+    .hero{background:var(--black);color:var(--white);padding:105px 0 100px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:470px;height:470px;border:1px solid #555;border-radius:50%;right:-150px;top:-130px;box-shadow:0 0 0 38px #181818,0 0 0 39px #444,0 0 0 85px #181818,0 0 0 86px #333}
+    .eyebrow{text-transform:uppercase;letter-spacing:3px;color:#aaa;font-size:11px;font-weight:700}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-3px;max-width:760px;margin:22px 0}
+    .hero p{color:#c8c8c8;max-width:570px;font-size:17px;margin:0 0 30px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    section{padding:82px 0}
+    .section-head{max-width:650px;margin-bottom:38px}
+    h2{font-size:clamp(30px,4vw,45px);line-height:1.1;letter-spacing:-1.5px;margin:10px 0 14px}
+    .muted{color:#666}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);padding:28px;min-height:220px}
+    .num{font-size:12px;color:var(--gray);letter-spacing:2px;font-weight:700}
+    .card h3{font-size:21px;margin:22px 0 9px}
+    .card p{font-size:14px;color:#666;margin:0}
+    .band{background:var(--light)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .feature{border-left:3px solid var(--gray);padding:4px 0 4px 20px;margin:18px 0}
+    .feature strong{display:block}
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .sample{background:#e9e9e9;min-height:210px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+    .sample.dark{background:#171717;color:white}
+    .sample.mid{background:#aaa}
+    .sample .fake-logo{font-size:23px;font-weight:900;letter-spacing:1px}
+    .sample small{font-size:10px;letter-spacing:2px;text-transform:uppercase}
+    .note{font-size:12px;color:#777;margin-top:15px}
+    .cta{background:var(--black);color:white;text-align:center;padding:76px 20px}
+    .cta p{color:#bbb;max-width:560px;margin:0 auto 25px}
+    form{display:grid;gap:12px;max-width:600px;margin-top:25px}
+    input,textarea,select{width:100%;padding:14px;border:1px solid #ccc;border-radius:3px;font:inherit;background:white}
+    textarea{min-height:120px;resize:vertical}
+    footer{padding:30px 0;border-top:1px solid var(--line);font-size:12px;color:#777}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.links{display:none}.grid,.portfolio,.split{grid-template-columns:1fr}.hero{padding:78px 0}.hero:after{opacity:.35;right:-300px}.split{gap:28px}section{padding:62px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#">LOCAL LIFT<span>MEDIA</span></a>
+  <div class="links"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <a class="btn" href="#contact">LET'S TALK</a>
+</nav></div></header>
+
+<main>
+  <section class="hero"><div class="wrap">
+    <div class="eyebrow">Websites · Logos · Branding</div>
+    <h1>Build your business.<br>Elevate your brand.</h1>
+    <p>We help small businesses make a stronger first impression with clean websites and memorable branding—without the big-agency runaround.</p>
+    <div class="hero-actions"><a class="btn light" href="#contact">GET A FREE CONSULTATION</a><a class="btn" style="border:1px solid #777" href="#services">EXPLORE SERVICES</a></div>
+  </div></section>
+
+  <section id="services"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">What we do</div><h2>Everything your business needs to look its best.</h2><p class="muted">Practical creative services for businesses ready to grow their presence.</p></div>
+    <div class="grid">
+      <article class="card"><div class="num">01 / WEB DESIGN</div><h3>Websites that work.</h3><p>Modern, mobile-friendly websites that explain what you do and make it easy for customers to get in touch.</p></article>
+      <article class="card"><div class="num">02 / LOGO DESIGN</div><h3>A logo worth remembering.</h3><p>Distinctive logo concepts and visual assets that give your business a consistent, professional look.</p></article>
+      <article class="card"><div class="num">03 / BRANDING</div><h3>A brand with direction.</h3><p>Thoughtful colors, typography, and social graphics that help your business show up consistently.</p></article>
+    </div>
+  </div></section>
+
+  <section class="band" id="about"><div class="wrap split">
+    <div><div class="eyebrow">Why Local Lift</div><h2>Big-picture thinking. Personal service.</h2><p class="muted">We believe every business deserves a professional online presence, no matter its size. Local Lift Media keeps the process straightforward: listen first, design with purpose, and make it easy for customers to take the next step.</p></div>
+    <div><div class="feature"><strong>Clear communication</strong><span class="muted">You know what we're building, what it costs, and what's next.</span></div><div class="feature"><strong>Design with purpose</strong><span class="muted">Every page and visual element has a job to do.</span></div><div class="feature"><strong>Built around your business</strong><span class="muted">Your services, customers, and goals guide the work.</span></div></div>
+  </div></section>
+
+  <section id="work"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Concept portfolio</div><h2>A preview of what we can create.</h2><p class="muted">These are sample design concepts created to demonstrate our style—not client projects.</p></div>
+    <div class="portfolio">
+      <div class="sample dark"><small>Concept · Contractor</small><div class="fake-logo">NORTHLINE<br>ROOFING</div><small>Built on quality.</small></div>
+      <div class="sample"><small>Concept · Home services</small><div class="fake-logo">SUMMIT<br>HEATING & AIR</div><small>Comfort starts here.</small></div>
+      <div class="sample mid"><small>Concept · Outdoor living</small><div class="fake-logo">FIELD & FORM<br>LANDSCAPING</div><small>Make room to grow.</small></div>
+    </div>
+  </div></section>
+
+  <section class="cta" id="contact"><div class="wrap">
+    <div class="eyebrow">Ready for the next step?</div><h2>Let's lift your business.</h2><p>Tell us a little about your business and what you'd like to improve. We'll follow up to discuss the right next step.</p>
+    <form action="mailto:liftmedia26@gmail.com" method="post" enctype="text/plain">
+      <input name="Name" placeholder="Your name" required>
+      <input name="Business" placeholder="Business name">
+      <input type="email" name="Email" placeholder="Email address" required>
+      <select name="Interested in"><option value="">What are you interested in?</option><option>Website design</option><option>Logo design</option><option>Branding</option><option>Multiple services</option></select>
+      <textarea name="Project details" placeholder="Tell us about your project"></textarea>
+      <button class="btn" type="submit" style="border:0;cursor:pointer">SEND INQUIRY</button>
+    </form>
+    <p class="note">Submitting opens your email app with your inquiry addressed to liftmedia26@gmail.com. You can also email us directly at liftmedia26@gmail.com.</p>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>LOCAL LIFT MEDIA</strong><br>Build your business. Elevate your brand.</div><div>© 2026 Local Lift Media. All rights reserved.</div></div></footer>
+</body>
+</html>
