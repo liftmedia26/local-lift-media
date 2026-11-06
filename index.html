@@ -39,7 +39,10 @@
     .feature strong{display:block}
     .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .portfolio{align-items:start}
-    .project{border:1px solid var(--line);background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    .project-link{display:block;color:inherit;text-decoration:none;border-radius:2px;outline-offset:4px}
+    .project-link .project{border:1px solid var(--line);background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06);height:100%;transition:transform .18s ease,box-shadow .18s ease}
+    .project-link:hover .project,.project-link:focus .project{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.13)}
+    .project-link:focus-visible{outline:3px solid #858585}
     .project-info{padding:18px 20px 21px}
     .project-info small{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#858585;font-weight:700}
     .project-info h3{font-size:20px;margin:7px 0 5px}
@@ -108,10 +111,16 @@
   <section id="work"><div class="wrap">
     <div class="section-head"><div class="eyebrow">Concept portfolio</div><h2>A preview of what we can create.</h2><p class="muted">Tap any sample to explore a full demo website. These are fictional concepts, not client projects.</p></div>
     <div class="portfolio">
+      <a class="project-link" href="northline-roofing.html" aria-label="Open Northline Roofing sample website">
+      <a class="project-link" href="summit-heating-air.html" aria-label="Open Summit Heating & Air sample website">
+      <a class="project-link" href="field-form-landscaping.html" aria-label="Open Field & Form Landscaping sample website">
       <article class="project">
         <div class="mock roof"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><div class="mocknav">NORTHLINE ROOFING <span>GET A QUOTE</span></div><div class="mockhero"><small>LOCAL ROOFING PROFESSIONALS</small><strong>PROTECTING WHAT MATTERS MOST.</strong><em>REQUEST AN ESTIMATE</em></div><div class="mockfoot"><span></span><span></span><span></span></div><div class="mockstrip"></div><div class="mockstrip short"></div></div></div>
-        <div class="project-info"><small>Website concept · Contractor</small><h3><a href="northline-roofing.html" style="text-decoration:underline;text-underline-offset:4px">Northline Roofing ↗</a></h3><p>A bold, trustworthy layout built to turn local visitors into estimate requests.</p></div>
+        <div class="project-info"><small>Website concept · Contractor</small><h3>Northline Roofing <span aria-hidden="true">↗</span></h3><p>A bold, trustworthy layout built to turn local visitors into estimate requests.</p></div>
       </article>
+      </a>
+      </a>
+      </a>
       <article class="project">
         <div class="mock hvac"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><div class="mocknav">SUMMIT HEATING & AIR <span>BOOK SERVICE</span></div><div class="mockhero"><small>COMFORT IN EVERY SEASON</small><strong>YOUR COMFORT IS OUR PRIORITY.</strong><em>SCHEDULE SERVICE</em></div><div class="mockfoot"><span></span><span></span><span></span></div><div class="mockstrip"></div><div class="mockstrip short"></div></div></div>
         <div class="project-info"><small>Website concept · Home services</small><h3><a href="summit-heating-air.html" style="text-decoration:underline;text-underline-offset:4px">Summit Heating & Air ↗</a></h3><p>A clean, professional design that makes services and booking easy to find.</p></div>
